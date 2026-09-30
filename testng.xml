@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org">
+<suite name="Continuous Workflow Suite">
+    <test name="Web Shop Automated Workflows">
+        <classes>
+            <class name="com.demo.shop.tests.PositiveWorkflowTest" />
+            <class name="com.demo.shop.tests.NegativeWorkflowTest" />
+        </classes>
+    </test>
+</suite>
