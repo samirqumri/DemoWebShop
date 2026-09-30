@@ -45,7 +45,7 @@ public class PositiveFlowPage extends BasePage {
 	}
 
 	public String getLoggedInAccountEmail() {
-		return waitForVisibility(accountHeaderText).getText();
+		return waitForVisibility(accountHeaderText).getText().trim();
 	}
 
 	public void searchForProduct(String term) {
@@ -62,7 +62,7 @@ public class PositiveFlowPage extends BasePage {
 	}
 
 	public String getBannerText() {
-		return waitForVisibility(successBanner).getText();
+		return waitForVisibility(successBanner).getText().trim();
 	}
 
 	public void navigateToCart() {
@@ -70,7 +70,7 @@ public class PositiveFlowPage extends BasePage {
 	}
 
 	public String getCartItemName() {
-		return waitForVisibility(cartProductName).getText();
+		return waitForVisibility(cartProductName).getText().trim();
 	}
 
 	public void updateQuantity(String quantity) {
@@ -79,7 +79,7 @@ public class PositiveFlowPage extends BasePage {
 	}
 
 	public String getSubtotalText() {
-		return waitForVisibility(productSubtotal).getText();
+		return waitForVisibility(productSubtotal).getText().trim();
 	}
 
 	public void removeItem() {

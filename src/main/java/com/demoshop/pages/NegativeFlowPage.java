@@ -32,7 +32,7 @@ public class NegativeFlowPage extends BasePage {
 	}
 
 	public String getCouponErrorMessage() {
-		return waitForVisibility(couponErrorMessage).getText();
+		return waitForVisibility(couponErrorMessage).getText().trim();
 	}
 
 	public void clickCheckoutButton() {
