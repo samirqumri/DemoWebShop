@@ -2,6 +2,7 @@ package com.demoshop.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class PositiveFlowPage extends BasePage {
 
@@ -78,8 +79,9 @@ public class PositiveFlowPage extends BasePage {
 	}
 
 	public void updateQuantity(String quantity) {
-		waitForVisibility(quantityInput).clear();
-		waitForVisibility(quantityInput).sendKeys(quantity);
+		WebElement qty = waitForVisibility(quantityInput);
+		qty.clear();
+		qty.sendKeys(quantity);
 		waitForClickability(updateCartButton).click();
 	}
 

@@ -3,21 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoshop.tests.PositiveFlowTest">
+      <class name="com.demoshop.tests.NegativeFlowTest">
         <methods>
-          <include name="OpenProductDetailsPage"/>
-          <include name="VerifySubtotalText"/>
-          <include name="VerifyHomepage"/>
-          <include name="AddProductToCart"/>
+          <include name="ExpiredCouponAttempt"/>
+          <include name="MissingDomainEmailSyntax"/>
+          <include name="InvalidCouponFormat"/>
+          <include name="NavigateToCart"/>
+          <include name="EmptyLogIn"/>
+          <include name="MissingAtSymbolEmailSyntax"/>
+          <include name="BadCouponInput"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="NavigateToShoppingCart"/>
-          <include name="ModifyProductQuantity"/>
-          <include name="StoreSearch"/>
-          <include name="UserAuthentication"/>
-          <include name="ValidateItemInCart"/>
+          <include name="BypassTermsOfService"/>
+          <include name="NavigateToLogin"/>
         </methods>
-      </class> <!-- com.demoshop.tests.PositiveFlowTest -->
+      </class> <!-- com.demoshop.tests.NegativeFlowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

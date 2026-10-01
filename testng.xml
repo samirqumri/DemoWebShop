@@ -3,8 +3,8 @@
 <suite name="Continuous Workflow Suite">
     <test name="Web Shop Automated Workflows">
         <classes>
-            <class name="com.demo.shop.tests.PositiveWorkflowTest" />
-            <class name="com.demo.shop.tests.NegativeWorkflowTest" />
+            <class name="com.demoshop.tests.PositiveFlowTest" />
+            <class name="com.demoshop.tests.NegativeFlowTest" />
         </classes>
     </test>
 </suite>

@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -23,6 +24,7 @@ public class BaseTest {
 	public void tearDown() {
 		if (driver != null) {
 			driver.quit();
+			Reporter.log("* Everything went Smoothly in this Method", true);
 		}
 	}
 }

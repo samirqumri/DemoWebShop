@@ -1,7 +1,9 @@
 package com.demoshop.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class NegativeFlowPage extends BasePage {
 
@@ -11,6 +13,7 @@ public class NegativeFlowPage extends BasePage {
 	private By PasswordField = By.id("Password");
 	private By loginSubmitButton = By.cssSelector("input[class$=login-button]");
 	// cart locators
+	private By addExpensivePC = By.xpath("//input[contains(@onclick, '31')]");
 	private By shoppingCartLink = By.xpath("//span[text()='Shopping cart']");
 	private By couponInput = By.xpath("//input[@name='discountcouponcode']");
 	private By couponApplyButton = By.xpath("//input[@name='applydiscountcouponcode']");
@@ -20,6 +23,10 @@ public class NegativeFlowPage extends BasePage {
 
 	public NegativeFlowPage(WebDriver driver) {
 		super(driver);
+	}
+
+	public String getCurrentPageUrl() {
+		return driver.getCurrentUrl();
 	}
 
 	public void navigateToCart() {
@@ -48,8 +55,20 @@ public class NegativeFlowPage extends BasePage {
 	}
 
 	public void submitLogin(String email, String password) {
-		waitForVisibility(EmailField).sendKeys(email);
-		waitForVisibility(PasswordField).sendKeys(password);
+		WebElement emailSpace = waitForVisibility(EmailField);
+		emailSpace.clear();
+		WebElement passwordSpace = waitForVisibility(PasswordField);
+		passwordSpace.clear();
+		emailSpace.sendKeys(email);
+		passwordSpace.sendKeys(password);
 		waitForVisibility(loginSubmitButton).click();
+	}
+
+	public void getExpensivePC() throws InterruptedException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,150)", "");
+		waitForClickability(addExpensivePC).click();
+		Thread.sleep(600);
+		js.executeScript("window.scrollBy(0,-150)", "");
 	}
 }
