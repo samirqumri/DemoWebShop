@@ -10,7 +10,7 @@ public class PositiveFlowPage extends BasePage {
 	private By EmailField = By.id("Email");
 	private By PasswordField = By.id("Password");
 	private By loginSubmitButton = By.cssSelector("input[class$=login-button]");
-	private By accountHeaderText = By.className("account");
+	private By accountHeaderText = By.cssSelector("a.account");
 
 //local page locators
 	private By searchBox = By.cssSelector("input#small-searchterms");
@@ -32,6 +32,10 @@ public class PositiveFlowPage extends BasePage {
 
 	public String getPageTitle() {
 		return driver.getTitle();
+	}
+
+	public String getCurrentPageUrl() {
+		return driver.getCurrentUrl();
 	}
 
 	public void navigateToLoginPage() {
@@ -74,6 +78,7 @@ public class PositiveFlowPage extends BasePage {
 	}
 
 	public void updateQuantity(String quantity) {
+		waitForVisibility(quantityInput).clear();
 		waitForVisibility(quantityInput).sendKeys(quantity);
 		waitForClickability(updateCartButton).click();
 	}

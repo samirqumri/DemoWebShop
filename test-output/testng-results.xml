@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-01T15:34:55 IDT" name="Default suite" finished-at="2026-10-01T15:35:04 IDT" duration-ms="9306">
+    <groups>
+    </groups>
+    <test started-at="2026-10-01T15:34:55 IDT" name="Default test" finished-at="2026-10-01T15:35:04 IDT" duration-ms="9306">
+      <class name="com.demoshop.tests.PositiveFlowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:34:55 IDT" name="setUp" finished-at="2026-10-01T15:34:57 IDT" duration-ms="2348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyHomepage()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:34:57 IDT" name="VerifyHomepage" finished-at="2026-10-01T15:34:57 IDT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomepage -->
+        <test-method signature="UserAuthentication()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:34:57 IDT" name="UserAuthentication" finished-at="2026-10-01T15:34:58 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.VerifyHomepage" duration-ms="1041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserAuthentication -->
+        <test-method signature="StoreSearch()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:34:58 IDT" name="StoreSearch" finished-at="2026-10-01T15:34:59 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.UserAuthentication" duration-ms="684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StoreSearch -->
+        <test-method signature="OpenProductDetailsPage()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:34:59 IDT" name="OpenProductDetailsPage" finished-at="2026-10-01T15:35:00 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.StoreSearch" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenProductDetailsPage -->
+        <test-method signature="AddProductToCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:35:00 IDT" name="AddProductToCart" finished-at="2026-10-01T15:35:00 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.OpenProductDetailsPage" duration-ms="586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToCart -->
+        <test-method signature="NavigateToShoppingCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:35:00 IDT" name="NavigateToShoppingCart" finished-at="2026-10-01T15:35:01 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.AddProductToCart" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToShoppingCart -->
+        <test-method signature="ValidateItemInCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:35:01 IDT" name="ValidateItemInCart" finished-at="2026-10-01T15:35:01 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.NavigateToShoppingCart" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateItemInCart -->
+        <test-method signature="ModifyProductQuantity()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:35:01 IDT" name="ModifyProductQuantity" finished-at="2026-10-01T15:35:02 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.ValidateItemInCart" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModifyProductQuantity -->
+        <test-method signature="VerifySubtotalText()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:35:02 IDT" name="VerifySubtotalText" finished-at="2026-10-01T15:35:02 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.ModifyProductQuantity" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySubtotalText -->
+        <test-method signature="RemoveItemAndConfirmEmptyCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:35:02 IDT" name="RemoveItemAndConfirmEmptyCart" finished-at="2026-10-01T15:35:04 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.VerifySubtotalText" duration-ms="2545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveItemAndConfirmEmptyCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@7a8c8dcf]" started-at="2026-10-01T15:35:04 IDT" name="tearDown" finished-at="2026-10-01T15:35:04 IDT" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoshop.tests.PositiveFlowTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
