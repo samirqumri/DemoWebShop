@@ -68,86 +68,86 @@
       <![CDATA[* Everything went Smoothly in this Method]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-10-01T17:49:15 IDT" name="Continuous Workflow Suite" finished-at="2026-10-01T17:49:29 IDT" duration-ms="14107">
+  <suite started-at="2026-10-02T16:24:56 IDT" name="Continuous Workflow Suite" finished-at="2026-10-02T16:25:09 IDT" duration-ms="13631">
     <groups>
     </groups>
-    <test started-at="2026-10-01T17:49:15 IDT" name="Web Shop Automated Workflows" finished-at="2026-10-01T17:49:29 IDT" duration-ms="14107">
+    <test started-at="2026-10-02T16:24:56 IDT" name="Web Shop Automated Workflows" finished-at="2026-10-02T16:25:09 IDT" duration-ms="13631">
       <class name="com.demoshop.tests.PositiveFlowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:15 IDT" name="setUp" finished-at="2026-10-01T17:49:17 IDT" duration-ms="2282" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:24:56 IDT" name="setUp" finished-at="2026-10-02T16:24:58 IDT" duration-ms="2265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyHomepage()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:17 IDT" name="VerifyHomepage" finished-at="2026-10-01T17:49:17 IDT" duration-ms="13" status="PASS">
+        <test-method signature="VerifyHomepage()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:24:58 IDT" name="VerifyHomepage" finished-at="2026-10-02T16:24:58 IDT" duration-ms="13" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- VerifyHomepage -->
-        <test-method signature="UserAuthentication()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:17 IDT" name="UserAuthentication" finished-at="2026-10-01T17:49:19 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.VerifyHomepage" duration-ms="1664" status="PASS">
+        <test-method signature="UserAuthentication()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:24:58 IDT" name="UserAuthentication" finished-at="2026-10-02T16:24:59 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.VerifyHomepage" duration-ms="1070" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- UserAuthentication -->
-        <test-method signature="StoreSearch()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:19 IDT" name="StoreSearch" finished-at="2026-10-01T17:49:20 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.UserAuthentication" duration-ms="726" status="PASS">
+        <test-method signature="StoreSearch()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:24:59 IDT" name="StoreSearch" finished-at="2026-10-02T16:25:00 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.UserAuthentication" duration-ms="659" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- StoreSearch -->
-        <test-method signature="OpenProductDetailsPage()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:20 IDT" name="OpenProductDetailsPage" finished-at="2026-10-01T17:49:20 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.StoreSearch" duration-ms="527" status="PASS">
+        <test-method signature="OpenProductDetailsPage()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:25:00 IDT" name="OpenProductDetailsPage" finished-at="2026-10-02T16:25:00 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.StoreSearch" duration-ms="588" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- OpenProductDetailsPage -->
-        <test-method signature="AddProductToCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:20 IDT" name="AddProductToCart" finished-at="2026-10-01T17:49:21 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.OpenProductDetailsPage" duration-ms="644" status="PASS">
+        <test-method signature="AddProductToCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:25:00 IDT" name="AddProductToCart" finished-at="2026-10-02T16:25:01 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.OpenProductDetailsPage" duration-ms="575" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- AddProductToCart -->
-        <test-method signature="NavigateToShoppingCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:21 IDT" name="NavigateToShoppingCart" finished-at="2026-10-01T17:49:21 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.AddProductToCart" duration-ms="596" status="PASS">
+        <test-method signature="NavigateToShoppingCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:25:01 IDT" name="NavigateToShoppingCart" finished-at="2026-10-02T16:25:02 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.AddProductToCart" duration-ms="657" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- NavigateToShoppingCart -->
-        <test-method signature="ValidateItemInCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:21 IDT" name="ValidateItemInCart" finished-at="2026-10-01T17:49:21 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.NavigateToShoppingCart" duration-ms="14" status="PASS">
+        <test-method signature="ValidateItemInCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:25:02 IDT" name="ValidateItemInCart" finished-at="2026-10-02T16:25:02 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.NavigateToShoppingCart" duration-ms="18" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- ValidateItemInCart -->
-        <test-method signature="ModifyProductQuantity()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:21 IDT" name="ModifyProductQuantity" finished-at="2026-10-01T17:49:22 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.ValidateItemInCart" duration-ms="611" status="PASS">
+        <test-method signature="ModifyProductQuantity()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:25:02 IDT" name="ModifyProductQuantity" finished-at="2026-10-02T16:25:02 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.ValidateItemInCart" duration-ms="627" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- ModifyProductQuantity -->
-        <test-method signature="VerifySubtotalText()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:22 IDT" name="VerifySubtotalText" finished-at="2026-10-01T17:49:22 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.ModifyProductQuantity" duration-ms="21" status="PASS">
+        <test-method signature="VerifySubtotalText()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:25:02 IDT" name="VerifySubtotalText" finished-at="2026-10-02T16:25:02 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.ModifyProductQuantity" duration-ms="17" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- VerifySubtotalText -->
-        <test-method signature="RemoveItemAndConfirmEmptyCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:22 IDT" name="RemoveItemAndConfirmEmptyCart" finished-at="2026-10-01T17:49:22 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.VerifySubtotalText" duration-ms="459" status="PASS">
+        <test-method signature="RemoveItemAndConfirmEmptyCart()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:25:02 IDT" name="RemoveItemAndConfirmEmptyCart" finished-at="2026-10-02T16:25:03 IDT" depends-on-methods="com.demoshop.tests.PositiveFlowTest.VerifySubtotalText" duration-ms="491" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- RemoveItemAndConfirmEmptyCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@710f4dc7]" started-at="2026-10-01T17:49:22 IDT" name="tearDown" finished-at="2026-10-01T17:49:23 IDT" duration-ms="99" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.PositiveFlowTest@2df3b89c]" started-at="2026-10-02T16:25:03 IDT" name="tearDown" finished-at="2026-10-02T16:25:03 IDT" duration-ms="104" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[* Everything went Smoothly in this Method]]>
@@ -156,81 +156,117 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoshop.tests.PositiveFlowTest -->
       <class name="com.demoshop.tests.NegativeFlowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:23 IDT" name="setUp" finished-at="2026-10-01T17:49:24 IDT" duration-ms="1735" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:03 IDT" name="setUp" finished-at="2026-10-02T16:25:05 IDT" duration-ms="1791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="NavigateToCart()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:24 IDT" name="NavigateToCart" finished-at="2026-10-01T17:49:26 IDT" duration-ms="1279" status="PASS">
+        <test-method signature="NavigateToCart()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:05 IDT" name="NavigateToCart" finished-at="2026-10-02T16:25:06 IDT" duration-ms="1222" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- NavigateToCart -->
-        <test-method signature="InvalidCouponFormat()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:26 IDT" name="InvalidCouponFormat" finished-at="2026-10-01T17:49:26 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.NavigateToCart" duration-ms="568" status="PASS">
+        <test-method signature="HugeQuantity()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:06 IDT" name="HugeQuantity" finished-at="2026-10-02T16:25:06 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.NavigateToCart" duration-ms="596" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Passed Succesfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- HugeQuantity -->
+        <test-method signature="InvalidCouponFormat()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:06 IDT" name="InvalidCouponFormat" finished-at="2026-10-02T16:25:07 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.HugeQuantity" duration-ms="525" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- InvalidCouponFormat -->
-        <test-method signature="BadCouponInput()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:26 IDT" name="BadCouponInput" finished-at="2026-10-01T17:49:27 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.InvalidCouponFormat" duration-ms="527" status="PASS">
+        <test-method signature="BadCouponInput()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:07 IDT" name="BadCouponInput" finished-at="2026-10-02T16:25:07 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.InvalidCouponFormat" duration-ms="545" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- BadCouponInput -->
-        <test-method signature="ExpiredCouponAttempt()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:27 IDT" name="ExpiredCouponAttempt" finished-at="2026-10-01T17:49:27 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.BadCouponInput" duration-ms="546" status="PASS">
+        <test-method signature="ExpiredCouponAttempt()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:07 IDT" name="ExpiredCouponAttempt" finished-at="2026-10-02T16:25:08 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.BadCouponInput" duration-ms="571" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- ExpiredCouponAttempt -->
-        <test-method signature="BypassTermsOfService()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:27 IDT" name="BypassTermsOfService" finished-at="2026-10-01T17:49:27 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.ExpiredCouponAttempt" duration-ms="71" status="PASS">
+        <test-method signature="BypassTermsOfService()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:08 IDT" name="BypassTermsOfService" finished-at="2026-10-02T16:25:08 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.ExpiredCouponAttempt" duration-ms="67" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- BypassTermsOfService -->
-        <test-method signature="NavigateToLogin()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:27 IDT" name="NavigateToLogin" finished-at="2026-10-01T17:49:28 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.BypassTermsOfService" duration-ms="372" status="PASS">
+        <test-method signature="NavigateToLogin()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:08 IDT" name="NavigateToLogin" finished-at="2026-10-02T16:25:08 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.BypassTermsOfService" duration-ms="352" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- NavigateToLogin -->
-        <test-method signature="EmptyLogIn()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:28 IDT" name="EmptyLogIn" finished-at="2026-10-01T17:49:28 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.NavigateToLogin" duration-ms="443" status="PASS">
+        <test-method signature="invalidLoginAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:08 IDT" name="invalidLoginAttempts" data-provider="loginData" finished-at="2026-10-02T16:25:09 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.NavigateToLogin" duration-ms="441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- EmptyLogIn -->
-        <test-method signature="badEmailFormat()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:28 IDT" name="badEmailFormat" finished-at="2026-10-01T17:49:28 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.EmptyLogIn" duration-ms="114" status="PASS">
+        </test-method> <!-- invalidLoginAttempts -->
+        <test-method signature="invalidLoginAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:09 IDT" name="invalidLoginAttempts" data-provider="loginData" finished-at="2026-10-02T16:25:09 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.NavigateToLogin" duration-ms="119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jackblackemailcom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jack7654]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- badEmailFormat -->
-        <test-method signature="missingAtSymbol()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:28 IDT" name="missingAtSymbol" finished-at="2026-10-01T17:49:28 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.badEmailFormat" duration-ms="145" status="PASS">
+        </test-method> <!-- invalidLoginAttempts -->
+        <test-method signature="invalidLoginAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:09 IDT" name="invalidLoginAttempts" data-provider="loginData" finished-at="2026-10-02T16:25:09 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.NavigateToLogin" duration-ms="147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[blackjack@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jack94365$#@*]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[Test Passed Succesfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- missingAtSymbol -->
-        <test-method signature="badCredentials()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:28 IDT" name="badCredentials" finished-at="2026-10-01T17:49:29 IDT" depends-on-methods="com.demoshop.tests.NegativeFlowTest.missingAtSymbol" duration-ms="501" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test Passed Succesfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- badCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@7817fd62]" started-at="2026-10-01T17:49:29 IDT" name="tearDown" finished-at="2026-10-01T17:49:29 IDT" duration-ms="82" status="PASS">
+        </test-method> <!-- invalidLoginAttempts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.NegativeFlowTest@6200f9cb]" started-at="2026-10-02T16:25:09 IDT" name="tearDown" finished-at="2026-10-02T16:25:09 IDT" duration-ms="106" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[* Everything went Smoothly in this Method]]>

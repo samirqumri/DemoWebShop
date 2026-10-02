@@ -2,6 +2,7 @@ package com.demoshop.tests;
 
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.demoshop.pages.NegativeFlowPage;
@@ -12,13 +13,22 @@ public class NegativeFlowTest extends BaseTest {
 	@Test
 	public void NavigateToCart() throws InterruptedException {
 		page = new NegativeFlowPage(driver);
+		page.scrolldown();
 		page.getExpensivePC();
+		page.scrollup();
 		page.navigateToCart();
 		Assert.assertTrue(page.getCurrentPageUrl().contains("cart"));
 		Reporter.log("Test Passed Succesfully");
 	}
 
 	@Test(dependsOnMethods = "NavigateToCart")
+	public void HugeQuantity() {
+		page.updateQuantity("100000");
+		Assert.assertTrue(page.getCurrentPageUrl().contains("cart"));
+		Reporter.log("Test Passed Succesfully");
+	}
+
+	@Test(dependsOnMethods = "HugeQuantity")
 	public void InvalidCouponFormat() {
 		page.applyCouponCode("copoun6543");
 		Assert.assertEquals(page.getCouponErrorMessage(),
@@ -54,31 +64,16 @@ public class NegativeFlowTest extends BaseTest {
 		Reporter.log("Test Passed Succesfully");
 	}
 
-	@Test(dependsOnMethods = "NavigateToLogin")
-	public void EmptyLogIn() {
-		page.submitLogin("", "");
+	@Test(dataProvider = "loginData", dependsOnMethods = "NavigateToLogin")
+	public void invalidLoginAttempts(String email, String password) {
+		page.submitLogin(email, password);
 		Assert.assertTrue(page.getCurrentPageUrl().contains("login"));
 		Reporter.log("Test Passed Succesfully");
 	}
 
-	@Test(dependsOnMethods = "EmptyLogIn")
-	public void badEmailFormat() {
-		page.submitLogin("jackblackemailcom", "jack7654");
-		Assert.assertTrue(page.getCurrentPageUrl().contains("login"));
-		Reporter.log("Test Passed Succesfully");
-	}
-
-	@Test(dependsOnMethods = "badEmailFormat")
-	public void missingAtSymbol() {
-		page.submitLogin("jackblack.com", "jack7654");
-		Assert.assertTrue(page.getCurrentPageUrl().contains("login"));
-		Reporter.log("Test Passed Succesfully");
-	}
-
-	@Test(dependsOnMethods = "missingAtSymbol")
-	public void badCredentials() {
-		page.submitLogin("blackjack@gmail.com", "jack94365$#@*");
-		Assert.assertTrue(page.getCurrentPageUrl().contains("login"));
-		Reporter.log("Test Passed Succesfully");
+	@DataProvider(name = "loginData")
+	public Object[][] getLoginData() {
+		return new Object[][] { { "", "" }, { "jackblackemailcom", "jack7654" },
+				{ "blackjack@gmail.com", "jack94365$#@*" } };
 	}
 }

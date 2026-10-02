@@ -20,6 +20,8 @@ public class NegativeFlowPage extends BasePage {
 	private By couponErrorMessage = By.xpath("//div[@class='message']");
 	private By checkoutButton = By.xpath("//button[normalize-space()='Checkout']");
 	private By termsModalBox = By.cssSelector("div[id*=warning-box]");
+	private By quantityInput = By.className("qty-input");
+	private By updateCartButton = By.name("updatecart");
 
 	public NegativeFlowPage(WebDriver driver) {
 		super(driver);
@@ -64,11 +66,25 @@ public class NegativeFlowPage extends BasePage {
 		waitForVisibility(loginSubmitButton).click();
 	}
 
-	public void getExpensivePC() throws InterruptedException {
+	public void updateQuantity(String qty) {
+		WebElement qtyBox = waitForVisibility(quantityInput);
+		qtyBox.clear();
+		qtyBox.sendKeys(qty);
+		waitForClickability(updateCartButton).click();
+	}
+
+	public void scrolldown() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,150)", "");
+	}
+
+	public void scrollup() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-150)", "");
+	}
+
+	public void getExpensivePC() throws InterruptedException {
 		waitForClickability(addExpensivePC).click();
 		Thread.sleep(600);
-		js.executeScript("window.scrollBy(0,-150)", "");
 	}
 }

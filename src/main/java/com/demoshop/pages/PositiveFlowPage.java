@@ -17,7 +17,7 @@ public class PositiveFlowPage extends BasePage {
 	private By searchBox = By.cssSelector("input#small-searchterms");
 	private By searchButton = By.xpath("//input[@value='Search']");
 	private By productLink = By.linkText("14.1-inch Laptop");
-	private By addToCartButton = By.cssSelector("input#add-to-cart-button-31");
+	private By addToCartButton = By.cssSelector("input[id^='add-to-cart-button']");
 	private By successBanner = By.cssSelector("div#bar-notification");
 	private By cartLink = By.xpath("//span[text()='Shopping cart']");
 	private By cartProductName = By.cssSelector("a.product-name");
